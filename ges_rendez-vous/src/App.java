@@ -13,7 +13,7 @@ public class App {
             choix = PatientVue.showMenu();
             switch (choix) {
                 case 1 ->{
-                    patientService.addClient(PatientVue.saisiePatient());
+                    patientService.addPatient(PatientVue.saisiePatient());
                 }
                 case 2 ->{
                     PatientVue.listerPatient(patientService.listerPatient());
